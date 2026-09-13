@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="./vendor/MarkerCluster.css" />
   <link rel="stylesheet" href="./vendor/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="./app.css" />
+  <meta name="author" content="张鹏龙（Maxim）" />
+  <style>
+    .creator-credit{flex-shrink:0;display:flex;justify-content:flex-end;align-items:center;gap:6px;padding:5px 16px;border-top:1px solid var(--line);background:#fff;color:#687487;font-size:12px;line-height:18px}
+    .creator-credit strong{color:#384150;font-weight:600}
+    @media(max-width:860px){.workspace{margin-bottom:0}.creator-credit{justify-content:center;margin-bottom:calc(56px + env(safe-area-inset-bottom));padding:4px 12px}}
+  </style>
 </head>
 <body>
   <header class="topbar">
@@ -97,6 +103,7 @@
       <div id="companyList" class="company-list"></div>
     </aside>
   </main>
+  <footer class="creator-credit" aria-label="Website creator"><span>Created by</span><strong lang="zh-CN">张鹏龙（Maxim）</strong></footer>
 
   <div id="detailBackdrop" class="detail-backdrop" hidden></div>
   <section id="detailPanel" class="detail-panel" role="dialog" aria-modal="true" aria-label="Company details" hidden>
